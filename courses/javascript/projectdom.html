@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body id="body">
+    <!-- <ul Id="element" data="valid">
+        <li class="list-item">first element</li>
+        <li class="list-item">second element</li>
+        <li class="list-item">third element</li>
+    </ul> -->
+    <!-- <div id="firstDiv" class ="alldivs">first div</div> -->
+    <script>
+      const alldivs=document.getElementsByClassName("alldivs")
+    </script>
+    <!-- <div class="alldivs">second div</div> -->
+    <!-- <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table> -->
+    <button id="clickbtn" onclick=" alert('namaste world')">clickme</button>
+    <script>
+     //Root node
+
+       //console.log(document.documentElement)
+     //console.log(document.body)
+     //console.log(document.head)
+
+       //childrens
+       //console.log(document.body.childNodes)
+      //console.log(document.body.children)
+      //for(node of document.body.children){
+      //console.log(node)}
+      //console.log(document.body.firstChild)
+      //console.log(document.body.lastChild)
+      //console.log(document.body.firstElementChild)
+       //console.log(document.body.lastElementChild)
+      //const childrenOfBody =Array.from(document.body.children)
+      //console.log(childrenOfBody)
+      //siblings
+      //const ulTag= document.body.children[0];
+       //console.log(ultag.nextElemenntSibling);
+       //const firstLi=ulTag.children[0]
+       //const secondLi=ulTag.children[1]
+       //console.log(secondLi.previousElementSibling.textContent)
+       //console.log(ulTag.nextElementSibling)
+       //table DOM manupilation
+       //const tableTag = document.body.children[1]
+      // console.log(tableTag.rows)
+      //console.log(tableTag.tBodies[0].rows[0].cells[0].textContent)
+      //console.log(tableTag.tBodies[0].rows[0].cells[0].style="background-color:blue;")
+      //id search
+      //element.style.background="red"
+     // const ulTag=document.getElementById("element")
+      //ulTag.style.backgroundColor="red"
+      //listItem=document.getElementsByClassName("list-item")
+      //console.log(listItem) 
+      //console.log(document.getElementsByTagName("table"))
+      //const listItem=document.querySelectorAll('.list-item')
+      //const listItem=document.querySelectorAll('ul>li:last-child')
+      //console.log(listItem[0].textContent)
+      //const listItem=document.querySelector('#element')
+      //console.log(listItem)
+      //console.log(alldivs)
+        //console.log(element.id) 
+        //Attributes
+       // console.log(element.getAttribute('data'))
+        //console.log(element.setAttribute('order-placed','pending'))
+      // console.log(element.getAttribute('order-placed'))
+       // console.log(element.hasAttribute('order-placed'))
+        //console.log(element.removeAttribute('order-placed'))
+        //console.log(element.hasAttribute('order-placed'))
+        //console.log(element.attributes)
+        //creating and removing the nodes elements 
+        //const newDiv=document.createElement('div') 
+        //newDiv.innerHTML =`<ul Id="element" data="valid">
+          //  <li class="list-item">first element</li>
+            //<li class="list-item">second element</li>
+            //<li class="list-item">third element</li>
+        //</ul>` 
+        //const newText=document.createTextNode('namaste world')
+       // newDiv.appendChild(newText)
+        //body.append(newDiv)
+        //body.prepend(newDiv)
+        //body.before(newDiv)
+        //body.after(newDiv)
+        //firstDiv.replaceWith(newDiv)
+       // firstDiv.remove()
+
+       //event
+      //clickbtn.onclick=function(){
+        function callme(){
+        alert("thank for watching")
+      }
+     //clickbtn.onclick=callme
+     
+     
+      clickbtn.addEventListener('click',callme)
+     // clickbtn.addEventListener('click',function(){
+       // alert("thanks")
+     // })
+      //clickbtn.removeEventListener('click',callme)
+    </script>
+</body>
+</html>
+ 

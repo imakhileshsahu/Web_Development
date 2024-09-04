@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+         body{
+            background-color: #0087ff;
+            margin: 1rem;
+        } 
+        .panel{
+            border-radius: 0.5rem;
+              padding :1em;  
+             margin: 1rem; 
+            
+        }
+        .panel.panel-blue{
+            border: 1px solid rgb(18, 135, 213);
+          background-color: #ddeffd;
+          color: #0087ff;
+        }
+        .panel.panel-yellow{
+            border: 1px solid #edf023;
+            background-color: #fef0b2;
+            color: #edf023;
+            
+        }
+        .panel.panel-pink{
+            border: 1px solid pink;
+
+            background-color: #fad2e1;
+            color: pink;
+            
+        } .panel.panel-purple{
+            border: 1px solid purple;
+            background-color: #dfccff;
+            color:purple;
+            
+        }
+    </style>
+  </head>
+  <body class="py-5"> 
+    <!-- container -->
+    <!-- simple container -->
+    <div class="container panel panel-blue">
+        Hello! I am in a simple container.
+    </div>
+ <!-- fluid container -->
+ <div class="container-fluid my-4 panel panel-blue">
+    Hello! I am in a fluid-width container.
+ </div>
+ <div class="container bg-light">
+    <div class="row" >
+        <div class="col">
+        <div class="panel panel-blue">this is a single column.</div>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col">
+        <div class="panel panel-purple">this is first column </div>
+
+     </div>
+     <div class="col">
+        <div class="panel panel-purple">this is second column</div>
+     </div>
+    </div>
+    <div class="row">
+        <div class="col">
+           <div class="panel panel-pink">this is first column </div>
+   
+        </div>
+        <div class="col">
+           <div class="panel panel-pink">this is second column</div>
+        </div>
+        <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+         <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+         <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+         <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+
+         <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div><div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+         <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+         <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+         <div class="col">
+            <div class="panel panel-pink">this is second column</div>
+         </div>
+         
+
+         </div>
+        </div>
+
+    </div>
+
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-5 panel panel-yellow"> this is col -6</div>
+            <div class="col-6 panel panel-yellow"> this is col -6</div>
+            <div class="row">
+                <div class="col-5 panel panel-yellow"> this is col-5</div>
+                <div class="col-7 panel panel-yellow"> this is col-7</div>
+            </div>
+            <div class="row">
+                <div class="col-5 panel panel-yellow"> this is col-6</div>
+                <div class="col-6 panel panel-yellow"> this is col-6</div>
+            </div>
+        </div>
+        
+    </div> 
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 panel panel-yellow"> this is col -6</div>
+            <div class="col-sm-6 col-md-4 col-lg-3  panel panel-yellow"> this is col -6</div>
+            <div class="col-sm-6 col-md-4 col-lg-3  panel panel-yellow"> this is col -6</div>
+            <div class="col-sm-6 col-md-4 col-lg-3  panel panel-yellow"> this is col -6</div>
+        </div>
+    </div>
+
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 panel panel-yellow"> this is col -6</div>
+            <div class="col-sm-6 col-md-4 col-lg-3  panel panel-yellow"> this is col -6</div>
+            <div class="col-sm-6 col-md-4 col-lg-3  panel panel-yellow"> this is col -6</div>
+            <div class="col-sm-6 col-md-4 col-lg-3  panel panel-yellow"> this is col -6</div>
+        </div>
+
+    </div>
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-md-4 offset-md-4  panel panel-yellow"> this is col -6</div>
+            <div class="col-md-4   panel panel-yellow"> this is col -6</div>
+        </div>
+    </div>
+    <div class="container bg-light">
+        <div class="row">
+            this is bigger column
+            <div class="col-12 panel panel-yellow"> 
+                <div class="row">
+                <div class="col-4 panel panel-yellow ">this col-4</div>
+                <div class="col-4 panel panel-yellow">his col-4</div>
+                <div class="col-4 panel panel-yellow">his col-4</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     
+    
+
+    <!-- optional js;choose  one of hthe two! -->
+    <!-- option 1 bootstrap bundle with propper -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <!-- option 2 : separate propper and bootstrap js -->
+    
+
+</body>
+</html>

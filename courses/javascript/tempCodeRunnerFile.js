@@ -1,0 +1,2 @@
+ayHello();
+console.log(i);
